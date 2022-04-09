@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/final-project-2-react/static/css/main.fc747030.css",
+    "main.js": "/final-project-2-react/static/js/main.dde3ab7e.js",
+    "static/media/bitcoin.jpg": "/final-project-2-react/static/media/bitcoin.8d14d3dbed0db75bb097.jpg",
+    "index.html": "/final-project-2-react/index.html",
+    "main.fc747030.css.map": "/final-project-2-react/static/css/main.fc747030.css.map",
+    "main.dde3ab7e.js.map": "/final-project-2-react/static/js/main.dde3ab7e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fc747030.css",
+    "static/js/main.dde3ab7e.js"
+  ]
+}
