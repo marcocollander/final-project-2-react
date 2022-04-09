@@ -7,16 +7,16 @@ import Paragraph from './Paragraph';
 
 const Form = ({ placeholder }) => {
   const [result, setResult] = useState('To jest tyle złoty');
-  const [value, setValue] = useState();
+  const [value, setValue] = useState('');
   const [code, setCode] = useState();
 
   const onInputChange = (e) => {
     setValue(e.target.value);
   };
 
-  const onSelectionChange = (e) => {
-    setCode(e.option);
-    console.log(e.option);
+  const onSelectChange = (e) => {
+    setCode(e.target.value);
+    console.log(e.target.value);
   };
 
   const onBtnClick = (e) => {
@@ -50,8 +50,9 @@ const Form = ({ placeholder }) => {
             value={value}
           />
           <Selection
-            symbols={['EUR', 'USD', 'CHF']}
-            select={onSelectionChange}
+            symbols={['Wybierz symbol waluty', 'EUR', 'USD', 'CHF']}
+            change={onSelectChange}
+            values={['', 'EUR', 'USD', 'CHF']}
           />
           <Button click={onBtnClick} />
           <Paragraph result={result} />

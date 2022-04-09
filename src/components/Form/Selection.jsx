@@ -1,14 +1,16 @@
 import React from 'react';
 
-const Selection = ({ symbols, select }) => (
+const Selection = ({ symbols, change, values }) => (
   <select
     className='convertor__symbol'
     name='convertorSymbol'
     id='convertorSymbol'
-    onSelect={select}
+    onChange={change}
   >
     {symbols.map((symbol, i) => (
-      <option key={i}>{symbol}</option>
+      <option key={i} value={values[i]}>
+        {symbol}
+      </option>
     ))}
   </select>
 );
